@@ -1,0 +1,62 @@
+
+
+
+
+ 
+
+	{{!-- https://sandbox.interswitchng.com/webpay/pay --}}
+{{!--  payment --}}
+<form class="payment" method="POST" action=" https://ibank.gtbank.com/GTPay/Tranx.aspx" name="submit2gtpay_form" target="_self">
+
+/
+		<div class="panel panel-default credit-card-box">
+			<div class="panel-heading display-table">
+				<div class="row display-tr">
+					<h3 class="panel-title display-td">Torama Pay</h3>
+                  
+					<img class="img-responsive pull-right" src="/images/paylogo.png">
+				</div>
+                <p>Torama online payment interface.</p>
+			</div>
+		</div>
+		<br>
+		<div>
+
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="71E128D2" />
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="0jpRXa0nWOikF+p5Rq1VeUSuuzEqiajfNC2aYKPDlL6C4I3QFDHMvi4y8gPvMEXogipRVDyx6z2USgOBJ1GHC5JKKqQNFXTz0/KR41yOIOqUAWNH06aU4aaCqsiHN35kgT5SbJm3Xqi1cjsEddeXTfrCli5aezulnMLGWvJgG/HaralUcJ72OxBy5LmdEgNM+CNuJhtMr3KIQB4c+QYA59UXjziXDJpCtEK4a+anO0u+p9hyjp4Mhv88QnlJeEWlqIXz+Yd2+FIPuIZ7lTO3jmowaRaeLff8azpx8uTg88lOuxdN4QJrb7bDAUHkLYPE" />
+</div>
+        {{!-- deatials --}}
+        <input type="hidden" class="form-control" name="gtpay_mert_id" value="{{gtpay_mert_id}} " />
+<input type="hidden"   class="form-control" name="gtpay_tranx_id" value="{{trax_id}}" />
+<input type="hidden"  class="form-control" name="gtpay_tranx_amt" value="{{amount}}00" />
+<input type="hidden"  class="form-control" name="gtpay_tranx_curr" value="{{gtpay_tranx_curr}}" />
+<input type="hidden"  class="form-control" name="gtpay_cust_id" value="{{gtpay_cust_id}} " />
+<input type="hidden"   class="form-control" name="gtpay_cust_name" value="{{customerName}} " />
+<input type="hidden"  class="form-control" name="gtpay_tranx_memo" value="{{memo}} " />
+{{!-- <input type="hidden"  class="form-control" name="gtpay_no_show_gtbank" value="yes" /> --}}
+<input type="hidden"  class="form-control" name="gtpay_gway_name" value="" />
+<input type="hidden"  class="form-control" name="gtpay_echo_data" value="TEST" />
+<input type="hidden"  class="form-control" name="gtpay_hash" value="{{gtpay_hash}} " />
+<input type="hidden"  class="form-control" name="gtpay_tranx_noti_url" value="{{gtpay_tranx_noti_url}} " />
+<input type="hidden"  class="form-control" value="Pay Via GTPay" name="btnSubmit"/>
+
+
+		
+        <h4> Customer Name: {{customerName}} </h4>
+		<h6>Transaction id :{{trax_id}} </h6>
+        <h4> Amount # {{amount}}</h4>
+		<p>{{gtpay_hash}} </p>
+        <p> Memo :{{memo}} </p>
+
+        <hr>
+		<button class="blueButton" style="float:right;" type="submit"> <h2  class="blueButton"  >Confirm Payment</h2> </button>
+		<br><br><br><br>
+		<br>
+
+</form>
+
+
+{{!-- another form for testing... --}}
+
+
+

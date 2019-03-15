@@ -1,0 +1,31 @@
+{
+  "name": "myapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "crypto": "^1.0.1",
+    "cryptr": "^4.0.2",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "hbs": "^4.0.1",
+    "http-errors": "~1.6.2",
+    "js-sha3": "^0.8.0",
+    "js-sha512": "^0.8.0",
+    "mongoose": "^5.4.2",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11",
+    "random-number": "0.0.9",
+    "wepay": "0.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}

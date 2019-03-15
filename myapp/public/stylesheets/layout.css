@@ -1,0 +1,185 @@
+.mycol{
+    border: 1px solid gold;
+    min-height: vh;
+}
+.carousel{
+    min-height: 45vh;
+    border: 1px solid yellow;  
+}
+
+.w70 {
+    flex-basis: 70%;
+}
+
+.w30 {
+    flex-basis: 28%
+}
+
+/*
+.option::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    margin-right: 0.2em;
+    background: #FFCC01;
+    display:inline-block;
+    top: 50%;
+    left:2px;
+}
+*/
+
+
+.card .rside {
+    position: relative;
+    margin: 1em;
+    background: gray;
+}
+
+.rside::before,
+    .rside::after {
+      content: '';
+      position: absolute;
+      top: 1.25em;
+      bottom: 1.25em;
+      left: 1.25em;
+      right: 1.25em;
+      opacity: 1;
+      transition: transform ease-out 250ms;
+    }
+    
+    .rside::before {
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      transform: scale(0,1);
+    }
+    
+    .rside::after {
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      transform: scale(1,0);
+    }
+    
+    .rside:hover::before {
+      transform: scale(1.05, 1);
+    }
+    
+    .rside:hover::after {
+      transform: scale(1, 1.05);
+    }
+  
+  
+  
+  .card .card_img {
+    max-width: 100%;
+    display: block;
+    transition: opacity ease-out 250ms;
+  
+  }
+  
+  .card .rside:hover {
+    .card_img {
+      opacity: .4;
+    }
+  }
+  
+  .rside .card_text {
+    position: absolute;
+    top: 50%;
+    left: 125%;
+    transform: translate(-50%, -50%);
+    color: black;
+    opacity: 1;
+    transition: opacity ease-out 250ms;
+  }
+  
+  .card:hover  {
+    opacity: 1;
+  }
+
+  .icard img {
+      border-radius: 10%;
+      width:250px;
+      height:150px;
+  }
+  
+  .icard::before  {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f04b";
+    position: absolute;
+    font-size: 40px;
+    top:20%;
+    left:50%;
+    color:yellow;
+    display: block;
+    transform: scale(0);
+
+  }
+
+  .icard:hover::before {
+    opacity:0.7;
+    transform: scale(1, 1.05);
+
+}
+a.card-link {
+    color: black;
+}
+  
+  .rside .card_title {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 0;
+  }
+  
+  
+h5 {
+    text-transform: uppercase;
+    line-height: .9;
+    color: #D2002E;
+  }
+
+.nvd {
+    color: #FFCC01;
+}
+  
+.newvideo{
+    min-height: 25vh;
+   
+    border: 1px solid yellow;
+}
+
+.categoryvid{
+    min-height: 50vh;
+    border: 1px solid yellow;
+}
+
+.foo{
+    margin-top: 300px!important;
+}
+
+.logo{
+    color: red;
+}
+
+.myhf{
+    border: 1px solid yellow;
+    min-height: 15vh;   
+}
+.myh{
+    border: 2px solid grey;
+    min-height: 10vh;   
+}
+
+.text-white{
+    text-align: center;
+}
+
+.playlist{
+    min-height: 50vh;
+    border: 1px solid yellow;
+}
+.recent{
+    min-height: 50vh;
+    border: 1px solid yellow;
+    
+}
+.logo{height: 30px; width: 40px;}
+.margin{margin-top: 90px;}

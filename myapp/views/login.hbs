@@ -1,0 +1,36 @@
+
+
+            {{#if error}}
+<h3 style="color:rgb(243, 95, 9); text-align: center; text-emphasis: shadow 3px;">{{error}}</h3> 
+            {{/if}}
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<h1>Login</h1>
+			</div>
+
+			<form class="login-form" method="POST">
+				<div class="control-group">
+				<input type="text" class="login-field"  placeholder="Email" name="email" id="login-name">
+			
+				</div>
+
+				<div class="control-group">
+				<input type="password" class="login-field" name="password" placeholder="password" id="login-pass">
+				<label class="login-field-icon fui-lock" for="login-pass"></label>
+				</div>
+                <div class="control-group">
+					<a href=""><button  class="btn btn-primary btn-large btn-block" type="Submit">Go <i class="fa fa-fw fa-paper-plane"></i></button></a>
+
+				<label class="login-field-icon fui-lock" for="login-pass"></label>
+				</div>
+                
+					
+                <a class="login-link" href="/register">Dont have account?</a>
+				<a class="login-link" href="#">Lost your password?</a>
+
+
+
+			</form>
+		</div>
+	</div>

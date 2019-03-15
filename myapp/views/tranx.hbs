@@ -1,0 +1,56 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3 bg-white">
+      <p></p>
+      <a href="/home/transactions"> <button type="button" class="btn btn-success">Transactions</button></a>
+    </div>
+    <div class="col-sm-3 bg-white">
+     <p></p>
+      <a href="/payment"> <button type="button" class="btn btn-success">Pay now</button></a>
+    </div>
+     <div class="col-sm-3 bg-white">
+     <p></p>
+      <a href="/history"> <button type="button" class="btn btn-success">History</button></a>
+    </div>
+    <div class="col-sm-3 bg-white">
+    <p></p>
+      <a href="/profile"> <button type="button" class="btn btn-success">Profile</button></a>
+    </div>
+  </div>
+</div>
+
+
+{{!-- transactions view --}}
+<div class="container big-secondary " > <h4 class="text-danger ">Total  : {{count}} . </h4> </div>
+
+
+{{#each doc}}
+
+
+<div class="container bg-secondary" >
+  <h2 class="text-white" >Transaction Details</h2>
+  <div class="card">
+    <div class="card-body"> Customer Name : {{this.acount_name}}</div>
+  </div>
+  <div class="card">
+    <div class="card-body">Transaction id: {{this.trax_id}} </div>
+  </div>
+   <div class="card">
+    <div class="card-body">Amount : #{{this.amount}}</div>
+  </div>
+   <div class="card">
+    <div class="card-body">Customer id : {{this.customer_id}} </div>
+  </div>
+   <div class="card">
+    <div class="card-body">Status Message : {{this.status_message}}</div>
+  </div>
+   <div class="card">
+    <div class="card-body">Status Code: {{this.status_code}}</div>
+  </div>
+   <div class="card">
+    <div class="card-body">Time : {{this.time}} </div>
+  </div>
+</div>
+<hr>
+{{/each}}

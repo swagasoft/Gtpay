@@ -1,0 +1,40 @@
+
+
+
+
+ 
+<div class=" container ">  
+
+{{!--  payment --}}
+<form class="payment" method="POST" >
+
+
+		<div class="panel panel-default credit-card-box">
+			<div class="panel-heading display-table">
+				<div class="row display-tr">
+					<h3 class="panel-title display-td">Torama Pay</h3>
+                  
+					<img class="img-responsive pull-right" src="/images/paylogo.png">
+				</div>
+                <p>Torama online payment interface.</p>
+			</div>
+		</div>
+		<br>
+		
+	
+		<input type="number"  class="form-control"  name="amount" placeholder="Transaction amount"  />
+		
+		<input type="text"  class="form-control" name="customer_name" placeholder="your name"  value="{{user}}" />
+		
+		<input type="text"  class="form-control"  name="trax_memo" placeholder="Memo. e.g school fee."  />
+
+		<a href="/home"></a>
+		
+		<button class="blueButton" style="float:right;" type="submit">Pay Now</button>
+		<br><br>
+</form>
+
+<br><br><br><br>
+</div>
+
+

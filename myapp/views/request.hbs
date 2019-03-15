@@ -1,0 +1,33 @@
+
+<div class="container ">
+  <div class="row">
+    <div class="col-sm-3 bg-white">
+      <p></p>
+      <a href="/home/transactions"> <button type="button" class="btn btn-success">Transactions</button></a>
+    </div>
+    <div class="col-sm-3 bg-white">
+     <p></p>
+      <a href="/payment"> <button type="button" class="btn btn-success">Pay now</button></a>
+    </div>
+     <div class="col-sm-3 bg-white">
+     <p></p>
+      <a href="/history"> <button type="button" class="btn btn-success">History</button></a>
+    </div>
+    <div class="col-sm-3 bg-white">
+    <p></p>
+      <a href="/profile"> <button type="button" class="btn btn-success">profile</button></a>
+    </div>
+  </div>
+</div>
+
+
+{{!-- transaction details here --}}
+<ul class="list-group .text-center">
+  <li class="list-group-item"> Transaction id : {{transaction_id}} </li>
+  <li class="list-group-item"> Customer Name: {{customer_name}} </li>
+  <li class="list-group-item">Amount : #{{amount}} </li>
+  <li class="list-group-item">Customer id : {{cust_id}} </li>
+  <li class="list-group-item"> Status Message : {{status_message}} </li>
+  <li class="list-group-item"> Status Code: {{status_code}} </li>
+  <li class="list-group-item">Echo Data : {{echo_data}} </li>
+</ul>

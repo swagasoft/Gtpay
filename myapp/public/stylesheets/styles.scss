@@ -1,0 +1,261 @@
+
+$primary: blue;
+
+
+.navbar-nav .nav-item a:link, .navbar-nav .nav-item a:visited {color: white;}
+.navbar-nav .dropdown-menu {
+    background: $primary;
+    width: 300px;
+}
+
+.fixed-top {
+  opacity: .8;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.carousel {
+//  margin-bottom: 15px;
+  background-color: darken($primary, 25%);
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  //height: 100%;
+}
+
+
+// .carousel .item {
+//  // height: 500px;
+    
+// }
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  opacity: 0.5;
+ // height: 500px;
+}
+
+
+.carousel .container {
+  display: table;
+  background-color: none;
+  height: 80vh;
+ // margin-bottom: 60px;
+}
+
+.carousel-control {
+  background-color: none;
+}
+
+
+.carousel .item {
+  background-color: none;
+}
+
+// .carousel-item-left, .carousel-item-right {
+//   //  height: 500px; 
+//    // margin-bottom: 60px;
+// }
+.carousel-caption p {
+    font-size: 2em;
+}
+
+@media (max-width: 767px) {
+    .carousel-caption p {
+font-size: 1em;
+    }
+}
+.carousel-caption h1, .carousel-caption p,
+.carousel-caption .lead {
+  color: white;
+    font-weight: bold;
+     text-shadow: 3px 3px 5px rgba(0,0,0,0.75);
+  
+}
+.carousel-item {
+    height: 90vh;
+    width: 100%;
+   
+}
+.carousel-item:nth-child(1):after {
+    content: "";
+    background: url(http://placehold.it/1600x600&text=banner1)  center no-repeat;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+     background-size: cover;
+     border: 1px solid red;
+}
+
+.carousel-item:nth-child(2):after {
+    content: "";
+    background: url(http://placehold.it/1600x600&text=banner2)  center no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+.carousel-item:nth-child(3):after {
+    content: "";
+    background: url(http://placehold.it/1600x600&text=banner3)  center no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+
+@media (max-width: 950px) { 
+
+    .sds-card-group {
+        .card {
+           
+            flex: 1 0 100%;
+        }
+    }
+}
+
+//Home Page Card styles
+.sds-card-group {
+    margin: 1.5rem;
+    .card {
+        background: $primary;
+        color: white;
+        margin: 3px;
+        .card-title {
+            text-align: center;
+            padding: 1em;
+          img{
+                border-radius: 50%;
+            }
+            h3 {
+                 font-size: 1.7em;
+            }
+        }
+        .card-body{
+            h3 {
+                text-align: left;
+            }
+            text-align: justify;
+            
+        }
+        
+        .card-footer {
+            
+            
+            text-align: right;
+            background: darken($primary, 40%);
+            a {
+                border: 1px solid white;
+            }
+            a:link, a:visited {
+                color: #ccc;
+            }
+            
+        }
+        .card-footer:hover  {
+              background: darken($primary, 30%);
+            a:link, a:visited {
+                color:  inverce($primary, 30%);
+            }
+            }
+    }
+    .card:hover {
+        background: lighten($primary, 10)
+    }
+}
+//Home Page Card styles
+
+///////Customers
+///////////customers
+.custheader {
+    color: $primary;
+   width: 100%;
+}
+
+.customers:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.customers div {
+  height: 150px;
+  line-height: 132px;
+  width: 150px;
+  float: left;
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+
+.customers div img {
+  width: 120px;
+}
+///////Customers
+
+//list group
+.whymit {
+    padding: 1.5rem;
+     background: orange;
+   
+}
+
+.list-group-item {
+    color: brown;
+    border: none;
+    background: none;
+}
+//list group
+.hidden {
+  visibility: hidden;
+}
+
+.carousel-fade .carousel-inner .carousel-item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}

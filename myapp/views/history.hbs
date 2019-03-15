@@ -1,0 +1,86 @@
+
+<div class="container ">
+  <div class="row">
+    <div class="col-sm-3 bg-white">
+      <p></p>
+      <a href="/home/transactions"> <button type="button" class="btn btn-success">Transactions</button></a>
+    </div>
+    <div class="col-sm-3 bg-white">
+     <p></p>
+      <a href="/payment"> <button type="button" class="btn btn-success">Pay now</button></a>
+    </div>
+     <div class="col-sm-3 bg-white">
+     <p></p>
+      <a href="/history"> <button type="button" class="btn btn-success">History</button></a>
+    </div>
+    <div class="col-sm-3 bg-white">
+    <p></p>
+      <a href="/profile"> <button type="button" class="btn btn-success">Profile</button></a>
+    </div>
+  </div>
+</div>
+<hr > 
+
+
+{{!-- transactions view --}}
+
+  {{!-- transactions view --}}
+<div class="container big-secondary " > <h4 class="text-danger ">Total  : {{count}}  </h4> </div>
+
+      {{#each doc }}
+     
+
+      <form action="" method="POST"  class="form-group">
+
+  {{!-- test --}}
+  <div class="container ">
+  
+  <div class="row">
+    <div class="col-sm-4">
+        <div class="form-group">
+    <label for="email"> Customer name:</label>
+    <input type="email" class="form-control" readonly value="{{this.name}} ">
+  </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+    <label for="email">Date:</label>
+    <input type="email" class="form-control" readonly value="{{this.date}} ">
+  </div>
+    </div>
+     <div class="col-sm-4">
+      <div class="form-group">
+    <label for="email">Transaction id:</label>
+   <input type="email" class="form-control" name="trax" readonly value="{{this.trax_id}} ">
+  </div>
+    </div>
+     <div class="col-sm-4">
+      <div class="form-group">
+    <label for="email">Transaction memo:</label>
+   <input type="email" class="form-control" readonly value="{{this.memo}} ">
+  </div>
+    </div>
+     <div class="col-sm-4">
+      <div class="form-group">
+    <label for="email">Amount:</label>
+   <input type="email" class="form-control" readonly value="#{{this.amount}} ">
+  </div>
+    </div>
+     <div class="col-sm-4">
+      <div class="form-group">
+    
+   <input type="hidden" class="form-control" name="_id" readonly value="{{this._id}} ">
+  </div>
+    </div>
+  </div>
+</div>
+     
+
+  <button type="submit"  class="btn -danger">delete</button>
+      </form>
+      <hr>
+      {{/each}}
+     <br>
+  <br><br><br><br>
+  
+  
